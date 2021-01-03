@@ -1,43 +1,50 @@
 body{
-    background-color:rgba(50, 111, 119, 0.411);
     background-attachment: fixed;
     margin: 0;
     padding:0; 
     width: 100%;
-    height:950px;
+    height:750px;
+    font-family: 'Roboto', sans-serif;
     }
-    
-#Head h1 {
-    font-family: verdana;
+ .top-banner{
+    background-image: url("image/top-banner.png");
+    background-repeat: repeat-x;
+    float:left;
+} 
+#Head{
     text-align: center;
+} 
+.Highlight{
+    color:rgba(219, 154, 23, 0.952);
+   
+    }
+#Head h1 {
     color: rgba(179, 23, 88, 0.089);
-    background-color:rgba(165, 156, 209, 0.267);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 
     }
 #Head h1 a {
-        color: rgba(230, 28, 13, 0.493);
+        color: rgba(230, 28, 13, 0.527);
         font-size: 40px;  
         text-decoration: none;
         }  
-        
-h1 a:hover{
-    padding: 2px 1px;
-    font-size: 45px;  
-   
-}        
+#Head h1 a:hover{
+    box-shadow:2px 2px 4px rgb(134, 11, 11);
+    background-color:rgba(243, 243, 240, 0.021);
+}             
 .First-navbar{
-    float :clear; 
-    width: 100%;
-    height: 60px; 
-    border-radius: 5px;
-    background-color:rgba(70, 66, 63, 0.116)
+    float:left; 
+    width: 100%;  
+    box-shadow:10px 10px 40px 10px rgb(134, 11, 11);
+    border-radius: 2%;
 }
 #leftnav{
-    width:50%;
+    width:60%;
     height:100%;
     float: left;
-    margin: 0;
-    padding:0;  
+    margin: 5px 15px;
+    padding:5px; 
     
 }
 #leftnav ul li{
@@ -46,27 +53,45 @@ h1 a:hover{
     padding-left: 25px;
     
 }
-#leftnav li a:hover{
+#leftnav li a{
     background-attachment: fixed;
-    padding:.5px;
+    padding:5px 0px;
     display: inline-block;
     overflow: hidden;
+    color:rgba(238, 105, 105, 0.747);
+    border-radius: 10%;
 
+}
+#leftnav li a:hover{
+    box-shadow:5px 5px 5px rgb(134, 11, 11);
+    border-radius: 2%;
 }
 
 #rightnav{
-    width:35%;
-    height:100%;
+    width:27%;
     float: right;
+    margin-right:5%;
+    padding:0px;
 
 }
 
 #rightnav ul li{
+    text-decoration: none;  
     float: left;
-    list-style-type: none;   
-    font-size:35px;   
-}
+    font-size:35px;  
+    color:rgba(238, 105, 105, 0.747);
+    margin:none;
+    padding:5px;
 
+}
+#rightnav ul li input{
+    text-align: center;
+    margin:none;
+    padding:5px;
+    box-shadow:1px 1px 2px rgb(134, 11, 11);
+    border-radius: 1%;
+    
+}
 a{
     text-decoration: none;
     padding: 5px;   
@@ -79,82 +104,130 @@ li{
     padding-left: 5px;  
 }
 #Middle{
-    width: 100%;
+    float: left;
+    margin-top: 20px;
+    color:rebeccapurple;
+    width:100%;
     height: 550px;
-    border: 1px solid rgba(199, 183, 191, 0.808);
+
 }
 .Middle{
-    width: 28%;
-    height: 80%;
+    width: 40%;
+    height:80%;
     float: left;
-    border-radius: 15px;
-    padding: 1% 1.5%;
-    margin: 1%;
-    border: 1px solid rgba(35, 76, 209, 0.712);
-    background-color:rgba(226, 197, 177, 0.226);
+    padding:2%;
+    text-align: center;
+     
    
 }
+.Middle h1{
+    box-shadow:5px 5px 5px 5px rgb(134, 11, 11);
+    border-radius: 1%;
+}
+.Middle img{
+    float: right;
+    width:75%;
+    border-radius: 50%;
+    
+}
 .Middle p{
-    font-size:large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:500;
     color:rgba(85, 38, 7, 0.918);
     height: auto;
     float:left;
-    margin:0px;
-    padding:0;
-        
+    text-align: left;
+    padding-left: 10px;
+   
 }
-.Middle p:hover{
-    padding:2px;
-    display: inline-block;
-    overflow: hidden;
+.link-button{
+    background-color:orange;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color:white;
+    margin:5px;
+    float: left;
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+    box-shadow:5px 5px 5px 5px rgb(134, 11, 11);
+    border-radius: 5%;
+    margin:5px 45px;   
+    
+}
+.Dream-area{
+    float: left;
+    margin-top: 20px;
+    color:rebeccapurple;
+    width:100%;
+    height: 550px;
+    background-image: url("image/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+    box-shadow:1px px 2px rgb(134, 11, 11);
+    border-radius: 5%;
+}
+
+.orange-Highlight{
+    color:rgba(255, 166, 0, 0.651);
+}
+.Experience-area{
+    float: left;
+    width:100%;
+    height: 550px;
+    margin-top: 5px;
+    background-image: url("image/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+.Experience-area h1{ 
+    margin:10px 20px;
+    color:rgba(238, 105, 105, 0.548);
+}
+.Middle-third{
+    width: 40%;
+    height: 300px;
+    float: left;
+    padding:2%;
+    margin: 15px 30px;
+    text-align: center;
+    box-shadow:10px 10px 40px 10px rgb(134, 11, 11);
+    border-radius: 2%;
+    
 
 }
-.pic{
-    width:100%;
-    height: 250px;
-    margin:0;
-    padding:0;
-    float: left;
+.Single-experience{
+    padding-left: 5px;
+}
+#left-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightSalmon, tomato);
+    border-image-slice: 1;
+}
+#right-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+    clear: all;
+
     
 }
-.pic p{
-    width: 30%;
-    height: 100%;
-    float: left;  
-    margin: 0px 20px;
-    background-color:rgba(66, 63, 59, 0.048);
-    border-radius: 5px;
-    
-}
-.pic p img{
-    margin: 2px 75px;
-    width: 65%;
-    height: 97%;
-    border-radius: 50%; 
-    border: 1px solid rgba(255, 0, 0, 0.555);
-    overflow: hidden;
-    
-    
-}
-img a:hover{
-    transition: all 0.3s;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-footer{
+#end{
     width: 100%;
-    height:75px;
-    margin-top: 10px;
+    height:auto;
     float : left;
+    text-align:center;
     
 }   
 
-footer pre{
-    margin-top: 10px;
-    text-align:center;
-    font-size: 50px;
-    color:rgba(82, 32, 32, 0.76);
-    background-color:rgba(153, 146, 139, 0.26)
+#end pre{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    box-shadow:10px 10px 40px rgb(134, 11, 11);
+    border-radius: 2%;
 }
