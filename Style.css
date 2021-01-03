@@ -130,8 +130,8 @@ li{
 }
 .pic p img{
     margin: 2px 75px;
-    max-width: 65%;
-    min-height: 97%;
+    width: 65%;
+    height: 97%;
     border-radius: 50%; 
     border: 1px solid rgba(255, 0, 0, 0.555);
     overflow: hidden;
